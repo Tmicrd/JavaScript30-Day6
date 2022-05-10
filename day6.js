@@ -6,14 +6,12 @@ const cities = [];
 // console.log(prom); //  fetch() returns a promise
 
 // 1. get data
-
 fetch(endpoint)
   .then((blob) => blob.json())
   // .then((data) => console.log(data));
   .then((data) => cities.push(...data));
 
 // 2. get functionalities and create HTML
-
 function findMatches(wordToMatch, cities) {
   return cities.filter((place) => {
     const regex = new RegExp(wordToMatch, "gi");
@@ -55,7 +53,6 @@ function numberWithCommas(x) {
 }
 
 // 3. hook up to addEverntListner
-
 const searchInput = document.querySelector(".search");
 const suggestions = document.querySelector(".suggestions");
 
