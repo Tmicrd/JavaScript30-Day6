@@ -12,6 +12,7 @@ fetch(endpoint)
   .then((data) => cities.push(...data));
 
 // 2. get functionalities and create HTML
+
 function findMatches(wordToMatch, cities) {
   return cities.filter((place) => {
     const regex = new RegExp(wordToMatch, "gi");
