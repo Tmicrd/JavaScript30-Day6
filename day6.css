@@ -16,7 +16,7 @@ body {
 }
 
 .search {
-  width: 35%;
+  width: 45%;
   height: 5rem;
   margin-top: 4rem;
   outline: none;
@@ -35,7 +35,7 @@ body {
 .suggestions {
   margin: 0 auto;
   margin-top: 0.5rem;
-  width: 30%;
+  width: 40%;
 }
 
 .suggestions > li {
@@ -47,11 +47,11 @@ body {
   padding-left: 2rem;
   border: 1px solid var(--primary-color);
   box-shadow: 0 0 1px var(--primary-color);
-  font-size: 1.2rem;
+  font-weight: 300;
   margin-top: -1px;
   transform: skewX(-10deg);
 }
 
 .hl {
-  background: gold;
+  background: #06FF00;
 }
